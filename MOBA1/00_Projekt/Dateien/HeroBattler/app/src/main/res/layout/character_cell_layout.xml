@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/characterName"
+        android:layout_width="111dp"
+        android:layout_height="29dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:text="Name"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/characterClass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterNr" />
+
+    <TextView
+        android:id="@+id/characterClass"
+        android:layout_width="113dp"
+        android:layout_height="28dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:text="Class"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/characterRace"
+        app:layout_constraintStart_toEndOf="@+id/characterName"
+        app:layout_constraintTop_toBottomOf="@+id/characterLevel" />
+
+    <TextView
+        android:id="@+id/characterRace"
+        android:layout_width="110dp"
+        android:layout_height="29dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_weight="1"
+        android:text="Race"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/characterClass"
+        app:layout_constraintTop_toBottomOf="@+id/characterHP" />
+
+    <TextView
+        android:id="@+id/characterNr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="252dp"
+        android:layout_weight="1"
+        android:text="Nr."
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/characterLevel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="level"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/characterHP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/characterNr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterHP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="hp value"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/characterLevel"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

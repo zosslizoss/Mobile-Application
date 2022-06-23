@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+div {
+   box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.title {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.playerTurn {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.board {
+  width: 84vmin;
+  margin: auto;
+  outline: 1px solid black;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.board .field {
+  border: 1px solid black;
+  width: 12vmin;
+  height: 12vmin;
+}
+
+.board .field .piece {
+  width: 10vmin;
+  height: 10vmin;
+  border-radius: 50%;
+  margin: 1vmin;
+}
+.board .field .blue {
+  background-color: blue;
+}
+.board .field .red {
+  background-color: red;
+}
+
